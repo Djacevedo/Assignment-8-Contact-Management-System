@@ -1,0 +1,11 @@
+The solution I came up with is has three classes; Contact, Node, and Hashtable. 
+The Contact stores a persons indavidual contact info like name and phone number.
+The Node is a linked list node for handling colisions. The Hashtable manages
+the contact storage, retrevial, and debugging output. The Hash_function 
+computes an index by converting each character in the name to its Unicode value,
+multiplying it by its position, summing the result, and taking the modules of 
+the table size. This makes sure the distribution of keys is even. In order to 
+handle collisions, the implementation uses seperate chaining with a linked list.
+When two are hashed to the same index, they are created to a chain of Node objects.
+This simplifies insertion and avoids clustering issues common in linear probing.
+ 

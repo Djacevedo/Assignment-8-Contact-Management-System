@@ -87,7 +87,8 @@ class HashTable:
                     current=current.next
                 print('None')
 
-# Test your hash table implementation here.  
+# Test your hash table implementation here.
+  
 if __name__ == "__main__":
     table =HashTable(size=10)
     table.insert("Alice",Contact("Alice","555-1234"))
